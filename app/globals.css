@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+}
+
+body{
+  background-color: white;
+}
+
+input[type="email"]:disabled,
+input[type="password"]:disabled,
+input[type="text"]:disabled {
+  @apply bg-gray-300 cursor-not-allowed;
+}
+
+button[type="submit"]:disabled, .submit:disabled{
+  @apply cursor-not-allowed bg-red-400;
+}
